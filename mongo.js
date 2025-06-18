@@ -7,6 +7,7 @@ if (process.argv.length < 3) {
 
 const password = encodeURIComponent(process.argv[2]);
 const dbName = 'Persons'; // Specify database name
+
 const url = `mongodb+srv://GaneshGannu:${password}@cluster0.vesholq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
 mongoose.set('strictQuery',false)
